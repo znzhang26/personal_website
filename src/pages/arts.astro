@@ -1,0 +1,36 @@
+---
+// Import BaseLayout
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+// Array of images
+const images = [
+  '/gallery_fig1.jpg',
+  '/gallery_fig2.jpg',
+  '/gallery_fig3.jpg',
+];
+---
+
+<BaseLayout sideBarActiveItemID="arts">
+  <style>
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* Creates two columns */
+      gap: 10px; /* Adjust the gap between images */
+    }
+    .gallery-img {
+      width: 100%; /* Makes image take full width of the column */
+      height: auto; /* Keeps image aspect ratio */
+    }
+  </style>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Illustrations</div>
+  </div>
+  <div class="py-2">
+    <div class="gallery-grid">
+      {images.map((image, index) => (
+        <img class="gallery-img" src={image} alt={`Gallery image ${index}`} />
+      ))}
+    </div>
+  </div>
+</BaseLayout>

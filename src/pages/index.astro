@@ -2,75 +2,37 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import HorizontalCard from "../components/HorizontalCard.astro";
 import { getCollection } from "astro:content";
-
-const posts = (await getCollection("blog")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
-
-const last_posts = posts.slice(0, 3);
 ---
 
 <BaseLayout sideBarActiveItemID="home">
   <div class="pb-12 mt-5">
-    <div class="text-xl py-1">Hey there 🐱</div>
-    <div class="text-5xl font-bold">I'm Zining Zhang</div>
-    <div class="text-3xl py-3 font-bold">HCI Researcher, Designer and Illustrator</div>
+    <div class="text-5xl font-bold">Zining Zhang</div>
+    <div class="text-3xl py-3 font-bold">HCI Researcher, Mechanical Engineer, Illustrator</div>
     <div class="py-2">
       <text class="text-lg">
-        Zining Zhang is a second-year PhD student at the Computer Science department of the University of Maryland. She is part of <a href="http://smartlab.cs.umd.edu/" target="_blank"><u>Small Artifacts Lab</u></a>, advised by <a href="http://huaishu.umiacs.io/" target="_blank"><u>Prof. Huaishu Peng</u></a>. She specializes in human-computer interaction, with a particular focus on creating and improving haptic devices for realistic experiences in virtual and augmented reality.</br>
+        Zining is currently a second-year Ph.D. student in the Computer Science Department at the University of Maryland. She is a member of the <a href="http://smartlab.cs.umd.edu/" target="_blank"><u>Small Artifacts Lab</u></a>, advised by <a href="http://huaishu.umiacs.io/" target="_blank"><u>Dr. Huaishu Peng</u></a>. Her expertise lies in human-computer interaction, with a specific emphasis on developing and enhancing haptic devices to provide realistic experiences in virtual reality and augmented reality.</br>
         </br>
-        Zining had worked as a Research Engineer in the R&D Department at General Motors for two years. Before joining General Motors, she worked as a Engineer in Research Associate in the ESTAR Group at the University of Michigan, supervised by Professor K Alex Shorter. She received her Master's in Mechanical Engineering at the University of Michigan and Bachelor's in Mechanical Engineering at Beihang University (known as Beijing University of Aeronautics and Astronautics). Zining has two cats: Habibi and Hawaii.
+        Prior to her Ph.D. studies, Zining worked as a Research Engineer in the R&D Department at General Motors for two years. Before joining General Motors, she held the position of Engineer and Research Associate in the ESTAR Group at the University of Michigan, under the supervision of <a href="https://me.engin.umich.edu/people/faculty/alex-shorter/" target="_blank"><u>Dr. Alex Shorter</u></a>. She has a Master's degree in Mechanical Engineering from the University of Michigan and a Bachelor's degree in Mechanical Engineering from Beihang University, formerly known as the Beijing University of Aeronautics and Astronautics.</br>
+        </br>
+        Outside of her academic pursuits, Zining is passionate about painting and enjoys exploring various cultural food. She has crafted her own food maps for the states of Michigan and Maryland and is always happy to share her recommendations.</br>
+        </br>
+        Zining has two cats: Hawaii🐈 and Habibi🐈‍⬛.</br>
+        </br></br>
       </text>
     </div>
-    <div class="mt-8">
-      <a class="btn" href="https://drive.google.com/file/d/1uiyegnf5QdclKsbwkc1-A4zi_No8rOPt/view" target="_blank"> CV</a>
-      <a class="btn" href="https://scholar.google.com/citations?user=n2ogYCYAAAAJ&hl=en&oi=sra" target="_blank"> Google Scholar</a>
-      <a class="btn" href="https://twitter.com/_ziningzhang_" target="_blank"> Twitter</a>
-    </div>
-  </div>
 
   <div>
-    <div class="text-3xl w-full font-bold mb-2">My last projects {"</>"}</div>
+    <div class="text-2xl w-full font-bold mb-2">News</div>
   </div>
-
+  
   <HorizontalCard
-    title="Demo Project 1"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="NEW"
+    desc="Oct 29, 2023 ｜ 👋 Serving as a Student Volunteer for UIST 2023 in San Francisco, CA, USA."
   />
-  <div class="divider my-0"></div>
   <HorizontalCard
-    title="Demo Project 2"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
+    desc="Oct 29, 2022 ｜ 👋 Attending UIST 2022 in Person in Bend, OR, USA."
   />
-  <div class="divider my-0"></div>
   <HorizontalCard
-    title="Demo Project 3"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="FOSS"
+    desc="Aug 27, 2022 ｜ 🧑‍🎓 Started my Ph.D. journey at the University of Maryland, College Park."
   />
 
-  <div>
-    <div class="text-3xl w-full font-bold mb-5 mt-10">Latest from blog</div>
-  </div>
-
-  {
-    last_posts.map((post) => (
-      <>
-        <HorizontalCard
-          title={post.data.title}
-          img={post.data.heroImage}
-          desc={post.data.description}
-          url={"/blog/" + post.slug}
-          target="_self"
-          badge={post.data.badge}
-        />
-        <div class="divider my-0" />
-      </>
-    ))
-  }
 </BaseLayout>

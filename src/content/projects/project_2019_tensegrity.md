@@ -2,11 +2,11 @@
 title: "Tensegrity-Constrained Deployable Controls"
 description: "Independent Research (2019)"
 pubDate: "Aug 15 2019"
-heroImage: "/post_img.webp"
+heroImage: "/project_2019_tensegrity_teaser.jpg"
 ---
 <div class="py-2">
     <text class="text-lg">
-        <b>Keywords</b>: 3D printing, fabrication, functional inflatables</br>
+        <b>Author</b>: <b>Zining Zhang</b></br>
         <b>Patent</b>: Kim, W., et al. (2021). Internally tensioned inflatable structures. U.S. Patent No. US11084541B2. United States Patent and Trademark Office. <a href="https://patents.google.com/patent/US11084541B2/en" target="_blank"><u>https://patents.google.com/patent/US11084541B2/en</u></a></br>
         <b>Conference Presentation</b>: Luntz, J., et al. (2019). Tensegrity-constrained inflatables: A new approach. In <a href="https://event.asme.org/Events/media/library/resources/smasis/SMASIS-Final-Program.pdf" target="_blank"><u>ASME 2019 Conference on Smart Materials, Adaptive Structures and Intelligent Systems, SMASIS 2019</u></a>. American Society of Mechanical Engineers (ASME).</br>
         </br>
