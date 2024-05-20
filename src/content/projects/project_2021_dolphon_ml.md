@@ -3,7 +3,6 @@ title: "Investigation of Environmentally Dependent Movement of Bottlenose Dolphi
 description: "Journal of Zoological and Botanical Gardens (2021)"
 pubDate: "June 26 2021"
 heroImage: "/project_2021_dolphin_ml_teaser.jpg"
-badge: "New"
 ---
 
 <div class="py-2">
