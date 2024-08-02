@@ -3,7 +3,7 @@ title: "SolderlessPCB: Reusing Electronic Components in PCB Prototyping through 
 description: "CHI (2024)"
 pubDate: "May 11 2024"
 heroImage: "/project_2024_solderlesspcb_teaser.jpg"
-badge: "New"
+
 ---
 
 <div class="py-2">
