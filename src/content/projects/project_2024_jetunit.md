@@ -14,6 +14,8 @@ badge: "New"
         <b>Publication</b>: UIST '24 | Proceedings of the 37th Annual ACM Symposium on User Interface Software and Technology</br>
         <b>Paper</b>: <a href="" target="_blank"><u>PDF</u></a> | <a href="https://doi.org/10.1145/3654777.3676440" target="_blank"><u>DOI</u></a></br>
         </br>
+        <b>Demo</b>: <a href="" target="_blank"><u>PDF</u></a> | <a href="https://doi.org/10.1145/3672539.3686742" target="_blank"><u>DOI</u></a></br>
+        </br>
     </text>   
     <div>
         <iframe width="750" height="400" src="https://www.youtube.com/embed/ES31QBIXrLQ?si=fCxJAS8y0pCBOk_r" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
