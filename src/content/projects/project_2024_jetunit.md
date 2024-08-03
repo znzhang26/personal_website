@@ -13,7 +13,6 @@ badge: "New"
         <b>Author</b>: <b>Zining Zhang</b>, Jiasheng Li, Zeyu Yan, Jun Nishida, Huaishu Peng</br>
         <b>Publication</b>: UIST '24 | Proceedings of the 37th Annual ACM Symposium on User Interface Software and Technology</br>
         <b>Paper</b>: <a href="" target="_blank"><u>PDF</u></a> | <a href="https://doi.org/10.1145/3654777.3676440" target="_blank"><u>DOI</u></a></br>
-        </br>
         <b>Demo</b>: <a href="" target="_blank"><u>PDF</u></a> | <a href="https://doi.org/10.1145/3672539.3686742" target="_blank"><u>DOI</u></a></br>
         </br>
     </text>   
